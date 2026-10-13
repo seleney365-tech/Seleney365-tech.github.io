@@ -10,3 +10,12 @@ main:
     url: /skills/
   - title: "Contact"
     url: /contact/
+
+# 语言切换
+languages:
+  - title: "EN"
+    url: /
+  - title: "简"
+    url: /zh-cn/
+  - title: "繁"
+    url: /zh-tw/
