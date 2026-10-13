@@ -1,4 +1,4 @@
-# main links
+# 英文导航（默认）
 main:
   - title: "Career"
     url: /career/
@@ -11,11 +11,15 @@ main:
   - title: "Contact"
     url: /contact/
 
-# 语言切换
-languages:
-  - title: "EN"
-    url: /
-  - title: "简"
-    url: /zh-cn/
-  - title: "繁"
-    url: /zh-tw/
+# 中文导航
+main_zh:
+  - title: "职业经历"
+    url: /zh/career/
+  - title: "论文与竞赛"
+    url: /zh/publications/
+  - title: "学术课程"
+    url: /zh/academic/
+  - title: "技能与活动"
+    url: /zh/skills/
+  - title: "联系方式"
+    url: /zh/contact/
