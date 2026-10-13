@@ -1,1 +1,46 @@
+{% assign current_url = page.url %}
+{% if current_url contains '/zh/' %}
+  {% assign base_url = current_url | remove_first: '/zh' %}
+  {% assign current_lang = 'zh' %}
+{% else %}
+  {% assign base_url = current_url %}
+  {% assign current_lang = 'en' %}
+{% endif %}
 
+<div class="language-switcher">
+  {% if current_lang == 'en' %}
+    <span class="lang-current">EN</span>
+    <a href="/zh{{ base_url }}" class="lang-link">中文</a>
+  {% else %}
+    <a href="{{ base_url }}" class="lang-link">EN</a>
+    <span class="lang-current">中文</span>
+  {% endif %}
+</div>
+
+<style>
+  .language-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 15px;
+    font-size: 0.9em;
+  }
+  .language-switcher .lang-current {
+    color: #1a4f8a;
+    font-weight: bold;
+    padding: 4px 10px;
+    background: #e8f0fe;
+    border-radius: 6px;
+  }
+  .language-switcher .lang-link {
+    color: #2a7ae2;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .language-switcher .lang-link:hover {
+    background: #f0f5ff;
+    text-decoration: none;
+  }
+</style>
