@@ -317,3 +317,13 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Languages
+languages:
+  - code: "en"
+    name: "English"
+  - code: "zh-cn"
+    name: "简体中文"
+  - code: "zh-tw"
+    name: "繁體中文"
+default_lang: "en"
